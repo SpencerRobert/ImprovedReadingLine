@@ -1,29 +1,33 @@
 {
-   "action": {
-      "default_icon": "icons/icon19-active.png",
-      "default_title": "Toggle Reading Line (Ctrl + Alt + -)"
-   },
-   "background": {
-      "service_worker": "reading-line-bg.js"
-   },
-   "content_scripts": [ {
+  "action": {
+    "default_icon": "icons/icon19-active.png",
+    "default_title": "Toggle Reading Line (Ctrl + Alt + -)",
+    "default_popup": "adjustment-menu.html" // optional
+  },
+  "background": {
+    "service_worker": "reading-line-bg.js"
+  },
+  "content_scripts": [
+    {
       "css": [ "reading-line.css" ],
       "matches": [ "http://*/*", "https://*/*", "file://*/*" ]
-   }, {
+    },
+    {
       "js": [ "reading-line.js" ],
       "matches": [ "http://*/*", "https://*/*", "file://*/*" ]
-   } ],
-   "description": "Acts as a reading ruler, helping to keep an eye on a line of text with a mouse. New improvements added to make for a better user experience.",
-   "host_permissions": [ "http://*/*", "https://*/*", "file://*/*" ],
-   "icons": {
-      "128": "icons/icon128.png",
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png"
-   },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqZi/Hmc+y5SCgEiH9fAOL7BIrmC+gasEBxHxD7HtYgW+F931+M8W85dfZA1kaxXVQF/R8KjT4IazjcrwIv/qxusSF3Qg8PGBYN+ld8YkatVhcu1KicWHN6JH6ozwdnQl1tuPgClRXgn5899XH9bLrPRnghPKU7gSHPImLaKMU1s5xfaw7f756wZ+N+3BA86Ay0zU04hv5M6U+0/7d3fq0rUM8VRRg4EvP6t6JIxeN9QsiXGQa4Id5S+PcJMaNSLXpXZf8keizud+p6+L87HiTHA2TGW03qGlcAQQWWceeLbdWSJE5nr9A7SDBEQqK2sOyVVBTEcABrBmZHjre2mX2QIDAQAB",
-   "manifest_version": 3,
-   "name": "ImprovedReadingLine",
-   "permissions": [ "storage", "scripting" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "0.0.3"
+    }
+  ],
+  "description": "Acts as a reading ruler, helping to keep an eye on a line of text with a mouse. New improvements added to make for a better user experience.",
+  "host_permissions": [ "http://*/*", "https://*/*", "file://*/*" ],
+  "icons": {
+    "128": "icons/icon128.png",
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqZi/Hmc+y5SCgEiH9fAOL7BIrmC+gasEBxHxD7HtYgW+F931+M8W85dfZA1kaxXVQF/R8KjT4IazjcrwIv/qxusSF3Qg8PGBYN+ld8YkatVhcu1KicWHN6JH6ozwdnQl1tuPgClRXgn5899XH9bLrPRnghPKU7gSHPImLaKMU1s5xfaw7f756wZ+N+3BA86Ay0zU04hv5M6U+0/7d3fq0rUM8VRRg4EvP6t6JIxeN9QsiXGQa4Id5S+PcJMaNSLXpXZf8keizud+p6+L87HiTHA2TGW03qGlcAQQWWceeLbdWSJE5nr9A7SDBEQqK2sOyVVBTEcABrBmZHjre2mX2QIDAQAB",
+  "manifest_version": 3,
+  "name": "ImprovedReadingLine",
+  "permissions": [ "storage", "scripting" ],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "0.0.3"
 }
