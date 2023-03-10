@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Reading Line Adjuster</title>
-    
+    <script src="adjust-reading-line-driver.js"></script>
 </head>
 <body>
 
@@ -10,11 +10,13 @@
 
     <h1>Adjust Reading Line:</h1>
 
+    <button id="getButton" style="color: indianred"> GET </button>
+
     <br />
 
-    <div id="slider">
+    <div>
         <h2>Height</h2>
-        <input type="range" min="0" max="100" step="1" value="50" id="slider-range">
+        <input type="range" min="0" max="100" step="1" value="50" id="heightSlider">
     </div>
 
     <br />
@@ -28,7 +30,7 @@
 
     <div>
         <label for="colorpicker">Select color of reading line:</label>
-        <input type="color" id="colorpicker" value="#ff0000">
+        <input type="color" id="colorPicker" value="#ff0000">
     </div>
 
 </body>
