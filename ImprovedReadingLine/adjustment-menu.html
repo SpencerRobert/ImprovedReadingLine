@@ -6,11 +6,7 @@
 </head>
 <body>
 
-    <br />
-
-    <h1>Adjust Reading Line:</h1>
-
-    <button id="getButton" style="color: indianred"> GET </button>
+    <h1 style="font-size: 20px">Adjust Reading Line:</h1>
 
     <br />
 
@@ -29,8 +25,20 @@
     <br />
 
     <div>
-        <label for="colorpicker">Select color of reading line:</label>
-        <input type="color" id="colorPicker" value="#ff0000">
+        <label style="font-size: 12px; white-space: pre" for="colorpicker">Select color of reading line:</label>
+        <input type="color" id="colorPicker" value="#D3D3D3">
+    </div>
+
+    <br />
+
+    <div id="frozenOptions">
+        <span style="color: blue">On webpage, press ctrl + f to freeze and allow for shifting</span>
+
+        <br /><br />
+
+        <label for="shift">Shift amount:</label>
+        <input type="number" id="shift" step="5" min="0" max="100" maxlength="3">
+
     </div>
 
 </body>
