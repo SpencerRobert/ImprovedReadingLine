@@ -39,7 +39,7 @@ function convertColor(color) {
     const green = parseInt(color.substring(3, 5), 16);
     const blue = parseInt(color.substring(5, 7), 16);
 
-    var convertedColor = "rgba(" + red + ", " + green + ", " + blue + ", 0.05)";
+    var convertedColor = "rgba(" + red + ", " + green + ", " + blue + ", 0.15)";
     return convertedColor;
 }
 
