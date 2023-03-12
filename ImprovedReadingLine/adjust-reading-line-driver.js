@@ -19,6 +19,11 @@ document.addEventListener('DOMContentLoaded', function () {
         chrome.storage.sync.set({ 'color': this.value });
     });
 
+    //Listen for changes to opacity
+    document.getElementById('opacity').addEventListener('input', function () {
+        chrome.storage.sync.set({ 'opacity': this.value });
+    });
+
     //Listen for changes to shift amount
     document.getElementById('shift').addEventListener('input', function () {
 
